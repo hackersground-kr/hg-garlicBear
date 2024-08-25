@@ -5,6 +5,9 @@ on:
     branches:
       - main  # 배포할 브랜치 이름
 
+    paths:
+      - 'hello/**/*'
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
