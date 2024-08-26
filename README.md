@@ -61,7 +61,7 @@
 
 ## 시작하기
 
-1. 해커그라운드 깃허브의 hg-garlic리포지토리에서 <>code라고 적혀있는 초록색 버튼을 누른다![image](https://github.com/user-attachments/assets/1745ade4-ce7a-4a39-8aec-363c820f2092)
+1. 해커그라운드 깃허브의 hg-garlic리포지토리에서 <>code라고 적혀있는 초록색 버튼을 누른다![image](https://github.com/user-attachments/assets/2b90b56e-5fe4-4002-8553-7c49833207f4)
 
 
 2. Local메뉴에서 clone 방법 중 HTTPS를 선택하고, HTTPS글씨 바로 아래에 생기는 url을 복사합니다![image](https://github.com/user-attachments/assets/8243cb16-6763-401a-b918-5016ab504537)
