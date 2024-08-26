@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color:rgba(243, 243, 243, 1);
+
+}
+
+#symbol{
+    font-family: 'NPSfontBold';
+    color:rgba(30, 30, 30, 1);
+    font-size:24px;
+}
+
+header{
+    width:100vw;
+    height:116px;
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    border-bottom:1px solid rgba(219, 219, 219, 1);
+}
+
+#logo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#menu{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    
+}
+
+
+#chat{
+    text-decoration:none;
+    color:rgba(255, 122, 122, 1);
+    border-bottom:2px solid rgba(255, 122, 122, 1);
+    padding-bottom: 16px; /* 기본적인 간격 유지 */
+}
+
+#menu>p {
+    position: relative;
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgba(30, 30, 30, 1);
+    font-weight: 600; /* 기본 굵기 */
+    
+}
+
+
+#home{
+    text-decoration: none;
+    color:rgba(30, 30, 30, 1);
+}
