@@ -61,10 +61,13 @@
 
 ## 시작하기
 
-1. 해커그라운드 깃허브의 hg-garlic리포지토리에서 <>code라고 적혀있는 초록색 버튼을 누른다
+1. 해커그라운드 깃허브의 hg-garlic리포지토리에서 <>code라고 적혀있는 초록색 버튼을 누른다![image](https://github.com/user-attachments/assets/a406feeb-6dee-4c0d-8f96-88c683d59e4d)
 
-2. Local메뉴에서 clone 방법 중 HTTPS를 선택하고, HTTPS글씨 바로 아래에 생기는 url을 복사합니다
-3. 터미널을 통해 폴더를 열고, 해당 폴더 안에서 git clone ‘복사한 url 붙여넣기’를 통해 리포지토리를 클론합니다.
+
+2. Local메뉴에서 clone 방법 중 HTTPS를 선택하고, HTTPS글씨 바로 아래에 생기는 url을 복사합니다![image](https://github.com/user-attachments/assets/8243cb16-6763-401a-b918-5016ab504537)
+
+3. 터미널을 통해 폴더를 열고, 해당 폴더 안에서 git clone ‘복사한 url 붙여넣기’를 통해 리포지토리를 클론합니다.![image](https://github.com/user-attachments/assets/639fb6cd-b13f-4228-9248-3189655ece9e)
+
 4. Azure 포털에 접속: 웹 브라우저를 열고 [Azure 포털](https://portal.azure.com/)에 접속합니다.
 5. **로그인**: Azure 계정으로 로그인합니다.
 6. Azure 홈 화면의 왼쪽 상단의 옵션바를 클릭하고, 리소스 그룹을 선택합니다![image](https://github.com/user-attachments/assets/425db363-488e-4311-874f-9dada8a7d13b)
