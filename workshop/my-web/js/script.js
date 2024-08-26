@@ -6,3 +6,4 @@ const click = () => {
 const close = () => {
     window.close()
 }
+
