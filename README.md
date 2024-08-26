@@ -62,16 +62,25 @@
 ## 시작하기
 
 1. 해커그라운드 깃허브의 hg-garlic리포지토리에서 <>code라고 적혀있는 초록색 버튼을 누른다
+
 2. Local메뉴에서 clone 방법 중 HTTPS를 선택하고, HTTPS글씨 바로 아래에 생기는 url을 복사합니다
 3. 터미널을 통해 폴더를 열고, 해당 폴더 안에서 git clone ‘복사한 url 붙여넣기’를 통해 리포지토리를 클론합니다.
 4. Azure 포털에 접속: 웹 브라우저를 열고 [Azure 포털](https://portal.azure.com/)에 접속합니다.
 5. **로그인**: Azure 계정으로 로그인합니다.
-6. Azure 홈 화면의 왼쪽 상단의 옵션바를 클릭하고, 리소스 그룹을 선택합니다
-7. 여러 리소스 그룹 중 rg-garlicBear를 찾아 클릭합니다
-8. *”+만들기"**를 클릭합니다. 상단에 위치한 메뉴바에 있습니다.
-9. **웹앱 선택**: 검색창에 **"웹앱"**을 입력하고, **"Web App for Containers”**박스의 하단에 있는 만들기를 선택합니다. 만들기 버튼의 바로 아래 생기는 Web App for Containers를 누릅니다
-10. 구독은 Hackers Ground, 리소스 그룹은 rg-garlicBear, 이름은 다른 리소스와 중복되지 않게 합니다(예: testwabapp)
+6. Azure 홈 화면의 왼쪽 상단의 옵션바를 클릭하고, 리소스 그룹을 선택합니다![image](https://github.com/user-attachments/assets/425db363-488e-4311-874f-9dada8a7d13b)
+
+7. 여러 리소스 그룹 중 rg-garlicBear를 찾아 클릭합니다![image](https://github.com/user-attachments/assets/4b800e2d-5b97-4507-af75-423c63f7b369)
+
+8. *”+만들기"**를 클릭합니다. 상단에 위치한 메뉴바에 있습니다.![image](https://github.com/user-attachments/assets/01ccdd38-70fc-4a24-a79d-9cdde11d1d8e)
+
+9. **웹앱 선택**: 검색창에 **"웹앱"**을 입력하고, **"Web App for Containers”**박스의 하단에 있는 만들기를 선택합니다. 만들기 버튼의 바로 아래 생기는 Web App for Containers를 누릅니다![image](https://github.com/user-attachments/assets/928fe262-0b23-4b2c-9bd1-a5738e94ac4d)
+
+10. 구독은 Hackers Ground, 리소스 그룹은 rg-garlicBear, 이름은 다른 리소스와 중복되지 않게 합니다(예: testwabapp)![image](https://github.com/user-attachments/assets/b77da58e-04b0-4d3f-92f2-9c1a09d2420e)
+
 11. 만약 화면 상단에 경고창이 뜨며 권한이 필요하다고 할 시에는 클릭하여 설정을 통해 해당 권한을 허용해줍니다.
-12. **화면 좌측 하단의** **“검토+만들기"** 버튼을 클릭합니다.
-13. 그 다음 **화면 좌측 하단 ‘만들기’ 버튼을 클릭합니다**
-14. **배포가 완료된 것을 확인합니다**
+12. **화면 좌측 하단의** **“검토+만들기"** 버튼을 클릭합니다.![image](https://github.com/user-attachments/assets/657a0e7f-5681-49c3-9733-fe50c4f6c715)
+
+13. 그 다음 **화면 좌측 하단 ‘만들기’ 버튼을 클릭합니다**![image](https://github.com/user-attachments/assets/89fb6afc-9101-43e2-83a5-488b64dfde4f)
+
+14. **배포가 완료된 것을 확인합니다**![image](https://github.com/user-attachments/assets/fe63bbf3-4aa0-4496-addb-b052b3e3961a)
+
