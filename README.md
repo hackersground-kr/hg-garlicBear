@@ -59,6 +59,8 @@
 예산 설정: 애저는 사용한 만큼 비용을 지불하는 시스템이에요. 무료 계정으로 시작하더라도, 어떤 기능은 유료일 수 있으니 사용 전에 부모님이나 선생님과 상의해서 예산을 설정하는 것이 좋아요.
 
 
+
+
 ## 시작하기
 
 1. 해커그라운드 깃허브의 hg-garlic리포지토리에서 <>code라고 적혀있는 초록색 버튼을 누른다![image](https://github.com/user-attachments/assets/2b90b56e-5fe4-4002-8553-7c49833207f4)
@@ -90,3 +92,32 @@
 
 14. **배포가 완료된 것을 확인합니다**![image](https://github.com/user-attachments/assets/fe63bbf3-4aa0-4496-addb-b052b3e3961a)
 
+
+
+1. 검색창에서 터미널 검색
+2. git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart입력
+3. cd msdocs-python-flask-webapp-quickstart입력
+4. python3 -m venv .venv입력
+5. source .venv/bin/activate입력
+6.pip install -r requirements.txt입력
+7. flask run을 입력한 후 컨트롤 + c를 눌러 끈다
+8. az login입력 후(이메일 jhstl1203@gmail.com)비번(amgfaa289!@)
+9. az webapp up --runtime PYTHON:3.9 --sku B1 --logs입력
+10. The webapp ‘garlicweb’ doesn't exist
+Creating Resource group ‘rg’-garlicBear ...
+Resource group creation complete
+Creating AppServicePlan 'garlicweb' ...
+Creating webapp 'garlicweb’ ...
+Configuring default logging for the app, if not already enabled
+Creating zip with contents of dir /home/cephas/myExpressApp ...
+Getting scm site credentials for zip deployment
+Starting zip deployment. This operation can take a while to complete ...
+Deployment endpoint responded with status code 202
+You can launch the app at http://garlicweb.azurewebsites.net
+입력
+11. git remote add azure <Azure에서 제공한 Git URL>
+git add .
+git commit -m "Initial commit"
+git push azure master를 차례대로 입력한다
+12. url을 복사한다. 
+13. 앱으로 이동하여 복사한 url을 붙여 넣는다.
