@@ -1,9 +1,13 @@
-// index.js 또는 서버 파일
 import express from 'express';
 import bodyParser from 'body-parser';
 import fetch from 'node-fetch';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
@@ -13,18 +17,20 @@ const port = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
+// 정적 파일을 제공할 디렉토리 설정
+app.use(express.static(path.join(__dirname, 'my-web')));
+
 app.post('/api/message', async (req, res) => {
     const { message } = req.body;
 
     try {
-        const response = await fetch('https://garlicbear-openai-resource.openai.azure.com/', {
+        const response = await fetch('https://garlicBear-openai-resource.openai.azure.com/v1/engines/gpt-4/completions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${process.env.OPENAI_API_KEY}` // 서버 환경 변수에서 API 키 가져오기
+                'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
             },
             body: JSON.stringify({
-                model: 'text-davinci-003', // 또는 사용하는 모델의 ID
                 prompt: message,
                 max_tokens: 150
             })
