@@ -18,20 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function getBotResponse(userMessage) {
         try {
-            // ChatGPT API 호출
-            const response = await fetch('https://garlicbear-openai-resource.openai.azure.com/', { // 여기에 실제 API URL을 입력하세요
+            const response = await fetch('http://localhost:3000/api/message', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': 'Bearer 8de4b1d1dd974a1c97e7b9be1f87298b' // 여기에 실제 API 키를 입력하세요
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ message: userMessage })
             });
-
+    
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-
+    
             const data = await response.json();
             return data.reply || "Sorry, I don't understand.";
         } catch (error) {
