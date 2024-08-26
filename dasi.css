@@ -78,7 +78,6 @@ main{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    color:white;
     background-color:rgba(112, 197, 231, 1);
     overflow:hidden;
     position:relative;
@@ -86,11 +85,25 @@ main{
 
 #campaign_banner{
     font-size:20px;
-    margin-left:20px;
+    height:20px;
+    color:white;
 }
 
 #photo{
-    right:0px;
+    right:0.1%;
     position:absolute;
     margin-bottom:20px;
+}
+
+#text{
+    display:flex;
+    flex-direction: column;
+    margin-left:20px;
+    font-size:12px;
+    justify-content: center;
+    
+}
+a{
+    text-decoration: underline;
+    color:rgba(255, 255, 255, 0.8);
 }
