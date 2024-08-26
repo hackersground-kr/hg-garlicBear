@@ -9,7 +9,10 @@ body{
     margin:0;
     padding:0;
     background-color:rgba(243, 243, 243, 1);
+}
 
+a {
+    text-decoration: none;
 }
 
 #symbol{
@@ -18,7 +21,7 @@ body{
     font-size:24px;
 }
 
-header{
+.header{
     width:100vw;
     height:116px;
     display:flex;
@@ -40,7 +43,6 @@ header{
     display:flex;
     flex-direction: row;
     align-items:center;
-    
 }
 
 /* #menu>p{
@@ -55,7 +57,7 @@ header{
     padding-bottom:20px;
 } */
 
-#menu>p {
+#menu a{
     position: relative;
     margin-left: 20px;
     font-size: 14px;
@@ -65,7 +67,7 @@ header{
     transition: color 0.3s ease, font-weight 0.3s ease; /* 부드러운 전환 */
 }
 
-#menu>p::after {
+#menu a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -78,11 +80,11 @@ header{
     transition: transform 0.3s ease;
 }
 
-#menu>p:focus {
+#menu a:focus {
     color: rgba(255, 122, 122, 1);
     font-weight: 600;
 }
 
-#menu>p:focus::after {
+#menu a:focus::after {
     transform: scaleX(1); /* 선이 나타나도록 확장 */
 }
