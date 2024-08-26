@@ -68,8 +68,10 @@
 
 3. 터미널을 통해 폴더를 열고, 해당 폴더 안에서 git clone ‘복사한 url 붙여넣기’를 통해 리포지토리를 클론합니다.![image](https://github.com/user-attachments/assets/639fb6cd-b13f-4228-9248-3189655ece9e)
 
-4. Azure 포털에 접속: 웹 브라우저를 열고 [Azure 포털](https://portal.azure.com/)에 접속합니다.
-5. **로그인**: Azure 계정으로 로그인합니다.
+4. Azure 포털에 접속: 웹 브라우저를 열고 [Azure 포털](https://portal.azure.com/)에 접속합니다.![image](https://github.com/user-attachments/assets/8ca3cedc-d3e7-478f-a874-2f8d2129ec17)
+
+5. **로그인**: Azure 계정으로 로그인합니다.![image](https://github.com/user-attachments/assets/afb3ec47-34e0-4006-91b7-3d5954976cec)
+
 6. Azure 홈 화면의 왼쪽 상단의 옵션바를 클릭하고, 리소스 그룹을 선택합니다![image](https://github.com/user-attachments/assets/bc3a026a-dafe-4a3b-ad12-78aa9e6f1183)
 
 
