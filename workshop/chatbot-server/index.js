@@ -18,30 +18,26 @@ const __filename = fileURLToPath(import.meta.url);
 // 현재 파일의 디렉토리 경로를 구합니다.
 const __dirname = path.dirname(__filename);
 
-// .env 파일에 있는 환경 변수를 로드합니다.
-dotenv.config();
-
-// Express 애플리케이션을 생성합니다.
 const app = express();
-// 서버가 사용할 포트를 설정합니다. (포트 3000)
 const port = 3000;
 
-// CORS를 활성화하여 다른 출처에서의 요청을 허용합니다.
 app.use(cors());
-// 요청 본문을 JSON으로 파싱합니다.
 app.use(bodyParser.json());
 
-// 정적 파일을 제공할 디렉토리를 설정합니다. (my-web 폴더)
-app.use(express.static(path.join(__dirname, 'my-web')));
+// 정적 파일을 제공할 디렉토리 설정
+app.use(express.static(path.join(__dirname, '../my-web')));
 
-// 클라이언트가 POST 요청을 보낼 수 있는 엔드포인트를 정의합니다.
+// 루트 경로에서 index.html 파일을 제공하는 핸들러
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../my-web/html', 'chatBot.html'));
+});
+
 app.post('/api/message', async (req, res) => {
-    // 클라이언트로부터 받은 메시지를 요청 본문에서 추출합니다.
     const { message } = req.body;
 
     try {
         // OpenAI API에 POST 요청을 보냅니다.
-        const response = await fetch('https://garlicbear-openai-resource.openai.azure.com/v1/engines/gpt-4/completions', {
+        const response = await fetch('https://garlicbear-openai-resource.openai.azure.com/', {
             method: 'POST', // 요청 방법은 POST입니다.
             headers: {
                 'Content-Type': 'application/json', // 요청 본문은 JSON 형식입니다.
