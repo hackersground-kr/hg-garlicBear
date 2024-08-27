@@ -8,6 +8,34 @@ body {
     height: 100vh;
 }
 
+#menu{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    
+}
+
+
+#home{
+    text-decoration:none;
+    color:rgba(255, 122, 122, 1);
+    border-bottom:2px solid rgba(255, 122, 122, 1);
+    padding-bottom: 16px; /* 기본적인 간격 유지 */
+}
+
+#menu>p {
+    position: relative;
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgba(30, 30, 30, 1);
+    font-weight: 600; /* 기본 굵기 */
+    
+}
+#chat{
+    text-decoration: none;
+    color:rgba(30, 30, 30, 1);
+}
+
 .chat-box {
     flex: 1;
     overflow-y: scroll;

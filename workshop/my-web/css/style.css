@@ -8,11 +8,120 @@
 body{
     margin:0;
     padding:0;
-    background-color:rgba(243, 243, 243, 1);
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
 }
 
-a {
-    text-decoration: none;
+#modal.on, #home-modal.on , #mountain-modal.on , #car-modal.on , #factory-modal.on{
+    display:flex;
+}
+
+
+
+#modal{
+    display:none;
+    width:389px;
+    height:920px;
+    background-color: rgba(0,0,0,0.4);
+    position:absolute;
+    z-index:10;
+    margin-top:20px;
+    border-radius:20px;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.x1, .x2, .x3, .x4{
+    margin-left:200px;
+}
+
+.box> p{
+    margin-left:16px;
+}
+
+.box{
+    width:200px;
+    height:56px;
+    border-radius:8px;
+    background-color:rgba(243, 243, 243, 1);
+    font-size:14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: flex-start;
+    margin-top:6px;
+}
+.title{
+    font-size: 20px;
+    font-weight:600;
+    height:16px;
+    
+}
+
+#article{
+    margin-bottom:16px;
+}
+
+mark{
+    color:rgba(255, 122, 122, 1);
+    background-color:rgba(240, 248, 255, 0);
+}
+
+#home-modal{
+    width:240px;
+    height:270px;
+    background-color:white;
+    border-radius:16px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mountain-modal{
+    width:240px;
+    height:270px;
+    background-color:white;
+    border-radius:16px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#car-modal{
+    width:240px;
+    height:270px;
+    background-color:white;
+    border-radius:16px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#factory-modal{
+    width:240px;
+    height:270px;
+    background-color:white;
+    border-radius:16px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container{
+    background-color:rgba(243, 243, 243, 1);
+    width:389px;
+    height:920px;
+    border-radius:20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.146);
+    margin-top:20px;
+    position:relative;
 }
 
 #symbol{
@@ -21,13 +130,15 @@ a {
     font-size:24px;
 }
 
-.header{
-    width:100vw;
+header{
+    width:100%;
     height:116px;
     display:flex;
     flex-direction: column;
     background-color:white;
     border-bottom:1px solid rgba(219, 219, 219, 1);
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
 }
 
 #logo{
@@ -43,48 +154,231 @@ a {
     display:flex;
     flex-direction: row;
     align-items:center;
+    
 }
 
-/* #menu>p{
-    margin-left:20px;
-    font-size:14px;
-}
 
-#menu>p:hover{
+#home{
+    text-decoration:none;
     color:rgba(255, 122, 122, 1);
     border-bottom:2px solid rgba(255, 122, 122, 1);
-    font-weight:600;
-    padding-bottom:20px;
-} */
+    padding-bottom: 16px; /* 기본적인 간격 유지 */
+}
 
-#menu a{
+#menu>p {
     position: relative;
     margin-left: 20px;
     font-size: 14px;
-    color: black;
-    padding-bottom: 19px; /* 기본적인 간격 유지 */
-    font-weight: normal; /* 기본 상태에서의 글자 굵기 */
-    transition: color 0.3s ease, font-weight 0.3s ease; /* 부드러운 전환 */
+    color: rgba(30, 30, 30, 1);
+    font-weight: 600; /* 기본 굵기 */
+    
 }
 
-#menu a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    background-color: rgba(255, 122, 122, 1);
-    transform: scaleX(0);
-    transform-origin: bottom left;
-    transition: transform 0.3s ease;
+
+#chat{
+    text-decoration: none;
+    color:rgba(30, 30, 30, 1);
 }
 
-#menu a:focus {
-    color: rgba(255, 122, 122, 1);
-    font-weight: 600;
+main{
+    width:100%;
+    height:811px;
 }
 
-#menu a:focus::after {
-    transform: scaleX(1); /* 선이 나타나도록 확장 */
+#banner{
+    margin-top:12px;
+    width:100%;
+    height:120px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(112, 197, 231, 1);
+    overflow:hidden;
+    position:relative;
+}
+
+#campaign_banner{
+    font-size:20px;
+    height:20px;
+    color:white;
+}
+
+#photo{
+    right:0.1%;
+    position:absolute;
+    margin-bottom:20px;
+}
+
+#text{
+    display:flex;
+    flex-direction: column;
+    margin-left:20px;
+    font-size:12px;
+    justify-content: center;
+    
+}
+a{
+    text-decoration: underline;
+    color:rgba(255, 255, 255, 0.8);
+}
+
+#solution{
+    width:100%;
+    height:150px;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top:20px;
+    overflow: scroll;
+}
+
+#solution> h1{
+    font-size:16px;
+    font-weight:600;
+    margin-left:20px;
+}
+
+.way{
+    width:100px;
+    height:97px;
+    background-color:white;
+    margin-right:8px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-shrink:0;
+
+}
+
+#ways::-webkit-scrollbar {
+    display: none;
+}
+
+
+#ways{
+    display: flex;
+    flex-direction: row;
+    margin-left:20px;
+    overflow: scroll; /* 이걸 추가해줍니다 */
+    font-size:14px;
+}
+
+.gray{
+    margin-top:24px;
+    width:100%;
+    height:1px;
+    background-color:rgba(223, 223, 223, 1);
+    
+}
+
+#campaign > h1{
+    margin-top:20px;
+    font-size:16px;
+    font-weight:600;
+    margin-left:20px;
+    
+}
+
+.activity{
+    width:140px;
+    height:80.45px;
+    background-color:white;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    border:1px solid rgb(188, 188, 188);
+    margin-right:8px;
+    
+}
+ 
+#campaign{
+    width:100%;
+    
+}
+
+#photos{
+    display:flex;
+    justify-content: space-around;
+    margin-left:20px;
+    overflow:scroll;
+}
+
+/* 웹킷 기반 브라우저 (Chrome, Safari) */
+#photos::-webkit-scrollbar {
+    display: none;
+}
+
+
+.p1{
+    background-image:url('../img/캠페인1.jpg');
+    background-size:cover;
+}
+
+.p2{
+    background-image:url('../img/캠페인2.jpeg');
+    background-size:cover;
+}
+
+.p3{
+    background-image:url('../img/캠페인3.jpg');
+    background-size:cover;
+}
+
+#prevention >  h1 {
+    font-size:16px;
+    font-weight:600;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+#prevention{
+    width: 100%;
+    height:239px;
+
+}
+
+#buttons{
+    display:flex;
+    flex-direction: row;
+    margin-left:20px;
+}
+
+.bt{
+    width:42px;
+    height:24px;
+    border:1px solid rgba(136, 136, 136, 1);
+    border-radius:10px;
+    color:rgba(136, 136, 136, 1);
+    font-size:12px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin-right:8px;
+}
+
+.notice{
+    width:349px;
+    height:178px;
+    border-radius:12px;
+    background-color:white;
+    margin-top:12px;
+    margin-left:20px;
+    display:flex;
+    flex-direction: row;
+    font-size:14px;
+}
+
+.notice> img{
+    border-radius:8px;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+#textcontent{
+    margin-left:20px;
+    margin-top:20px;
+    color:rgb(51, 51, 51);
 }
