@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class='header'>
+        <div id="logo">
+            <h1 id="symbol">dasi</h1>
+            <img src="../img/option.png" width='22px' height="19.56px">
+
+        </div>
+        
+        <div id="menu">
+            <a tabindex="0">홈</a>
+            <a href="./chatBot.html" tabindex="0">상담하기</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="banner">
+            <p class="title">화재 예방 캠페인<br>참여하기</p>
+            <a>바로가기</a>
+            <img src="../img/banner.png">
+        </div>
+
+        <h4>캠페인</h4>
+        <div class="campaignBox">
+            <a href="https://www.gunwi.net/gunwi/board.php?bo_table=news&wr_id=6036&page=154" target="_blank"><img src="../img/campaign1.png"></a>
+            <a href="https://www.dkilbo.com/news/articleView.html?idxno=389391" target="_blank"><img src="../img/campaign2.png"></a>
+            <a href="https://www.news2day.co.kr/article/20201125500427" target="_blank"><img src="../img/campaign3.png"></a>
+        </div>
+
+        <hr>
+
+        <h4>화재 대처하기</h4>
+        <div class="reactBox">
+            <img onclick="click()" id="0" src="../img/react1.png">
+            <img onclick="click()" id="1" src="../img/react2.png">
+            <img onclick="click()" id="2" src="../img/react3.png">
+            <img onclick="click()" id="3" src="../img/react4.png">
+        </div>
+
+        <hr>
+
+        <h4>화재 예방하기</h4>
+        <select size="1">
+            <option onchange="select()" selected value="0">집</option>
+            <option onchange="select()" value="1">회사</option>
+        </select>
+        <div class="preventionBox">
+            <img src="../img/home.png">
+            <ol>
+                <li>전기기구 청소하기</li>
+                <li>요리할 때 자리 비우지 않기</li>
+                <li>전선 상태 점검하기</li>
+                <li>소화기 비치하기</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
