@@ -1,29 +1,18 @@
-// DOMContentLoaded 이벤트는 문서의 초기 HTML이 완전히 로드된 후에 발생합니다.
-// 이 이벤트 리스너 안에서 페이지의 요소들을 조작합니다.
 document.addEventListener('DOMContentLoaded', () => {
-    // 채팅 메시지를 표시할 영역을 선택합니다.
     const chatBox = document.getElementById('chatBox');
-    // 사용자가 입력할 텍스트 필드를 선택합니다.
     const userInput = document.getElementById('userInput');
-    // 사용자가 메시지를 보내는 버튼을 선택합니다.
     const sendButton = document.getElementById('sendButton');
 
-    // 화면에 메시지를 표시하는 함수입니다.
-    // isUser가 true면 사용자 메시지, false면 봇 메시지로 스타일을 적용합니다.
     function sendMessage(message, isUser = false) {
-        // 새로운 div 요소를 생성하여 메시지를 담습니다.
         const messageDiv = document.createElement('div');
-        messageDiv.classList.add('message'); // 기본 메시지 스타일 적용
+        messageDiv.classList.add('message');
         if (isUser) {
-            messageDiv.classList.add('user-message'); // 사용자 메시지 스타일 추가
+            messageDiv.classList.add('user-message');
         } else {
-            messageDiv.classList.add('bot-message'); // 봇 메시지 스타일 추가
+            messageDiv.classList.add('bot-message');
         }
-        // 메시지 텍스트를 div에 설정합니다.
         messageDiv.textContent = message;
-        // 채팅 박스에 메시지를 추가합니다.
         chatBox.appendChild(messageDiv);
-        // 채팅 박스의 스크롤을 가장 최근 메시지로 이동합니다.
         chatBox.scrollTop = chatBox.scrollHeight;
     }
 
