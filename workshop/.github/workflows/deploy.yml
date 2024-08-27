@@ -34,6 +34,6 @@ jobs:
           --name ${{ secrets.garlicBear-webapp }} \
           --src ./path/to/your/zipfile.zip
       env:
-        AZURE_CLIENT_ID: ${{ secrets.930de797-1bc0-4f83-8c26-16eebcc2b244 }}
-        AZURE_CLIENT_SECRET: ${{ secrets.Md-8Q~2Z~Tp01f23wlF2X7h7Jk9ELfgLgPYo-dvf }}
+        AZURE_CLIENT_ID: ${{ secrets.83d768a3-e166-4e6e-8ee0-f5886cb554fc }}
+        AZURE_CLIENT_SECRET: ${{ secrets.AsU8Q~KDg723cjcR03Pf5ya42qVxcff3iD7.5ayT }}
         AZURE_TENANT_ID: ${{ secrets.bee29138-c48d-48ef-8133-9a68070b7096 }}
