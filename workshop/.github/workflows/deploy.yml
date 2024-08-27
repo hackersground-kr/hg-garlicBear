@@ -3,7 +3,7 @@ name: Deploy to Azure Web App
 on:
   push:
     branches:
-      - main  # main 브랜치에 푸시할 때마다 배포를 실행합니다.
+      - main
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20'  # 사용 중인 Node.js 버전
+        node-version: ''  # Node.js 버전 설정
 
     - name: Install dependencies
       run: npm install
@@ -26,8 +26,6 @@ jobs:
 
     - name: Setup Azure CLI
       uses: azure/setup-azure-cli@v1
-      with:
-        azure-subscription: ${{ secrets.bfa39d86-1058-4824-8074-e9d283d6c321 }}
 
     - name: Deploy to Azure Web App
       run: |
